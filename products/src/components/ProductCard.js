@@ -1,7 +1,6 @@
 import React from "react";
 
 const ProductCard = ({ product }) => {
-  console.log(product);
   return (
     <>
       <img alt={product.name} src={product.img} />
@@ -9,6 +8,7 @@ const ProductCard = ({ product }) => {
       <p>{product.description}</p>
       <p>De: {product.oldPrice}</p>
       <p>Por: {product.price}</p>
+      <input type="button" value="Comprar" />
     </>
   );
 };

@@ -3,7 +3,7 @@ import axios from "axios";
 import ProductCard from "./ProductCard";
 
 const Products = () => {
-  const [data, setData] = useState({ hits: [] });
+  const [data, setData] = useState({ products: [] });
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -17,10 +17,9 @@ const Products = () => {
     };
     fetchData();
   }, []);
-  console.log(data);
   return (
-    <header>
-      <h1>Products</h1>
+    <>
+      <h1>Sua seleção especial</h1>
       {isLoading ? (
         <div>Loading ...</div>
       ) : (
@@ -28,7 +27,8 @@ const Products = () => {
           <ProductCard key={product.id} product={product} />
         ))
       )}
-    </header>
+      <input type="button" value="Ainda mais produtos aqui!" />>
+    </>
   );
 };
 

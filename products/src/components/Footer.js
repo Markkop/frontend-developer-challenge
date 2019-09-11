@@ -2,9 +2,9 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <header>
-      <h1>Footer</h1>
-    </header>
+    <footer>
+      <p>Testando suas habilidades em HTML, CSS e JS. Linx Impulse 2019</p>
+    </footer>
   );
 };
 
