@@ -21,16 +21,16 @@ const p1Stlye = {
 
 const Header = () => {
   return (
-    <header style={style}>
-      <div>
-        <p style={p1Stlye}>uma seleção de produtos</p>
+    <header >
+      <div className="headerTexts">
+        <p>uma seleção de produtos</p>
         <p>especial para você</p>
         <p>
           Todos os produtos desta lista foram selecionados a partir da sua
           navegação. Aproveite!
         </p>
       </div>
-      <div>
+      <div className="headerButtons">
         <input type="button" value="Conheça a Linx" />
         <input type="button" value="Ajude o algorítimo" />
         <input type="button" value="Seus produtos" />
