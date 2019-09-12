@@ -12,6 +12,8 @@ p {
 }
 
 img {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #707070;
   width: 200px;
   height: 150px;
 }
@@ -87,9 +89,16 @@ h2 {
 }
 
 .productCard {
+  display: flex;
+  flex-flow: row wrap;
+  text-align: left;
   padding: 20px;
   width: 201px;
   height: 350px;
+}
+
+.buyButton {
+  width: 100%;
 }
 
 /* 
