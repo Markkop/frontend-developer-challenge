@@ -3,7 +3,7 @@ import React from "react";
 const Newsletter = () => {
   return (
     <section>
-      <h1>Compartilhe a novidade</h1>
+      <h2>Compartilhe a novidade</h2>
       <p>
         Quer que seus amigos também ganhem a lista personalizada deles? Preencha
         agora!

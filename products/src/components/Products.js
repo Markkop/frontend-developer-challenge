@@ -19,14 +19,16 @@ const Products = () => {
   }, []);
   return (
     <section>
-      <h1>Sua seleção especial</h1>
-      {isLoading ? (
-        <p>Loading ...</p>
-      ) : (
-        data.products.map(product => (
-          <ProductCard key={product.id} product={product} />
-        ))
-      )}
+      <h2>Sua seleção especial</h2>
+      <div className="productList">
+        {isLoading ? (
+          <p>Loading ...</p>
+        ) : (
+          data.products.map(product => (
+            <ProductCard key={product.id} product={product} />
+          ))
+        )}
+      </div>
       <input type="button" value="Ainda mais produtos aqui!" />>
     </section>
   );

@@ -1,21 +1,26 @@
 body {
   margin: 0;
   padding: 0;
+  text-align: center;
+}
+
+p {
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  color: #888888;
+}
+
+img {
+  width: 200px;
+  height: 150px;
 }
 
 header {
   background: #707070 0% 0% no-repeat padding-box;
   border: 1px solid #707070;
   opacity: 1;
-  text-align: center;
-}
-
-p {
-  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
 header p {
-  text-align: center;
   letter-spacing: 0;
   color: #ffffff;
   opacity: 1;
@@ -47,6 +52,26 @@ header input[type="button"] {
   border: 1px solid #707070;
   border-radius: 4px;
   opacity: 1;
+}
+
+h2 {
+  align-self: center;
+  font: Bold 18px/16px "Helvetica Neue";
+  color: #888888;
+}
+
+.productList {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  flex-flow: row wrap;
+  padding: 19vh;
+}
+
+.productCard {
+  padding: 20px;
+  width: 201px;
+  height: 350px;
 }
 
 /* 
