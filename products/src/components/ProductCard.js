@@ -15,11 +15,11 @@ const ProductCard = ({ product }) => {
       <img alt={product.name} src={product.image} />
       <div>
         <p>{product.name}</p>
-        <p>{product.description}</p>
+        <p className="productDescription">{product.description}</p>
       </div>
-      <div>
+      <div className="pricesDiv">
         <p>De: {formatPrice(product.oldPrice)}</p>
-        <p>Por: {formatPrice(product.price)}</p>
+        <p className="priceAfter">Por: {formatPrice(product.price)}</p>
         <p>
           ou {product.installments.count}x de{" "}
           {formatPrice(product.installments.value)}

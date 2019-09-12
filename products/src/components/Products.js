@@ -29,7 +29,11 @@ const Products = () => {
           ))
         )}
       </div>
-      <input type="button" value="Ainda mais produtos aqui!" />>
+      <input
+        className="moreProductsButton"
+        type="button"
+        value="Ainda mais produtos aqui"
+      />
     </section>
   );
 };
