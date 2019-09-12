@@ -7,6 +7,8 @@ body {
 p {
   font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   color: #888888;
+  letter-spacing: 0;
+  opacity: 1;
 }
 
 img {
@@ -15,15 +17,15 @@ img {
 }
 
 header {
+  padding: 25px 0;
   background: #707070 0% 0% no-repeat padding-box;
   border: 1px solid #707070;
   opacity: 1;
+  align-items: center;
 }
 
 header p {
-  letter-spacing: 0;
   color: #ffffff;
-  opacity: 1;
 }
 
 header p:first-child {
@@ -39,13 +41,29 @@ header p:nth-child(2) {
 
 header p:nth-child(3) {
   font: normal 14px/16px "Helvetica Neue";
-  margin-top: 24px;
+  padding: 25px;
+}
+
+nav {
+  padding: 1vw;
+  margin: 0 10vw;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row nowrap;
+  width: 80vw;
+}
+
+@media screen and (max-width: 480px) {
+  nav {
+    width: auto;
+    flex-flow: row wrap;
+  }
 }
 
 header input[type="button"] {
+  padding: 1vh;
   width: 160px;
   height: 40px;
-  margin: 20px;
   background: #ffffff 0% 0% no-repeat padding-box;
   color: #888888;
   box-shadow: 0px 1px 6px #00000029;
