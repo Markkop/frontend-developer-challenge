@@ -18,17 +18,17 @@ const Products = () => {
     fetchData();
   }, []);
   return (
-    <>
+    <section>
       <h1>Sua seleção especial</h1>
       {isLoading ? (
-        <div>Loading ...</div>
+        <p>Loading ...</p>
       ) : (
         data.products.map(product => (
           <ProductCard key={product.id} product={product} />
         ))
       )}
       <input type="button" value="Ainda mais produtos aqui!" />>
-    </>
+    </section>
   );
 };
 

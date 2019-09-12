@@ -2,7 +2,7 @@ import React from "react";
 
 const Newsletter = () => {
   return (
-    <>
+    <section>
       <h1>Compartilhe a novidade</h1>
       <p>
         Quer que seus amigos também ganhem a lista personalizada deles? Preencha
@@ -15,7 +15,7 @@ const Newsletter = () => {
         <input type="text" id="email" />
         <input type="button" value="Enviar agora" />
       </form>
-    </>
+    </section>
   );
 };
 

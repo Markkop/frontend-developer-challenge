@@ -11,12 +11,12 @@ const Header = () => {
           navegação. Aproveite!
         </p>
       </div>
-      <div>
+      <nav>
         <input type="button" value="Conheça a Linx" />
         <input type="button" value="Ajude o algorítimo" />
         <input type="button" value="Seus produtos" />
         <input type="button" value="Compartilhe" />
-      </div>
+      </nav>
     </header>
   );
 };
