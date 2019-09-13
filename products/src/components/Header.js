@@ -1,4 +1,12 @@
 import React from "react";
+import NavButton from "./NavButton";
+
+const links = [
+  { text: "Conheça a Linx", url: "https://www.linx.com.br/" },
+  { text: "Ajude o algorítimo", url: "#" },
+  { text: "Seus produtos", url: "#products" },
+  { text: "Compartilhe", url: "#newsletter" }
+];
 
 const Header = () => {
   return (
@@ -12,18 +20,9 @@ const Header = () => {
         </h3>
       </div>
       <nav>
-        <a href="http://a.a">
-          <button className="navButton">Conheça a Linx</button>
-        </a>
-        <a href="http://a.a">
-          <button className="navButton">Ajude o algorítimo</button>
-        </a>
-        <a href="http://a.a">
-          <button className="navButton">Seus produtos</button>
-        </a>
-        <a href="http://a.a">
-          <button className="navButton">Compartilhe</button>
-        </a>
+        {links.map(({ text, url }) => (
+          <NavButton key={text} text={text} url={url} />
+        ))}
       </nav>
     </header>
   );
