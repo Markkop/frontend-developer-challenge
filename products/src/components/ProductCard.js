@@ -14,8 +14,8 @@ const ProductCard = ({ product }) => {
     <div className="productCard">
       <img alt={product.name} src={product.image} />
       <div>
-        <p>{product.name}</p>
-        <p className="productDescription">{product.description}</p>
+        <h3 className="productTitle">{product.name}</h3>
+        <p>{product.description}</p>
       </div>
       <div className="pricesDiv">
         <p>De: {formatPrice(product.oldPrice)}</p>
@@ -25,7 +25,7 @@ const ProductCard = ({ product }) => {
           {formatPrice(product.installments.value)}
         </p>
       </div>
-      <input className="buyButton" type="button" value="Comprar" />
+      <input className="button buyButton" type="button" value="Comprar" />
     </div>
   );
 };
