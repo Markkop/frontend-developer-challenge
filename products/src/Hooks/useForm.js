@@ -9,7 +9,6 @@ const useForm = callback => {
   };
 
   const handleChange = event => {
-    console.log(event);
     event.persist();
     setValues(values => ({
       ...values,
