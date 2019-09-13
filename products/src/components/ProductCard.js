@@ -9,7 +9,7 @@ const formatPrice = (price = 0) => {
 
 const ProductCard = ({ product }) => {
   formatPrice();
-
+  console.log(product);
   return (
     <div className="productCard">
       <img alt={product.name} src={product.image} />
@@ -25,9 +25,18 @@ const ProductCard = ({ product }) => {
           {formatPrice(product.installments.value)}
         </p>
       </div>
-      <input className="button buyButton" type="button" value="Comprar" />
+      <input className="buyButton" type="button" value="Comprar" />
     </div>
   );
+};
+
+ProductCard.defaultProps = {
+  product: {
+    installments: {
+      count: 1,
+      value: 0
+    }
+  }
 };
 
 export default ProductCard;
