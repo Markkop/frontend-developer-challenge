@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import { handleUnavailable } from "../../utils/handleUnavailable";
 
 const formatPrice = (price = 0) => {
   return price.toLocaleString("pt-BR", {
@@ -8,6 +9,9 @@ const formatPrice = (price = 0) => {
 };
 
 const ProductCard = ({ product }) => {
+  const buyText = "Comprar";
+  const [buttonText, setButtonText] = useState(buyText);
+
   const { name, image, description, oldPrice, price, installments } = product;
   return (
     <div className="productCard">
@@ -23,7 +27,12 @@ const ProductCard = ({ product }) => {
           ou {installments.count}x de {formatPrice(installments.value)}
         </h3>
       </div>
-      <input className="buyButton" type="button" value="Comprar" />
+      <input
+        className="buyButton"
+        type="button"
+        value={buttonText}
+        onClick={() => handleUnavailable(setButtonText, buyText)}
+      />
     </div>
   );
 };
