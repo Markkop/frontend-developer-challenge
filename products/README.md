@@ -6,15 +6,20 @@ Check it out at: https://products.markkop.now.sh/
 
 The layout given: https://xd.adobe.com/spec/aa1c5781-ecac-46c9-7032-b66139998404-dc2d/grid
 
+## Main Difficulties
+
+To do
+
 ## Commands
 
 `git clone <this repository's link>`\
 `cd products`\
 `yarn` or `npm install` to install dependencies\
 `yarn star` or `npm start` to run it at `locahost:3000`\
-`now` with Now installed in your system to deploy (need to `now login` first)\
+`now` with Now installed in your system to deploy (need to `now login` first)
 
 ## Useful References
 
+- [Atomic Design](http://bradfrost.com/blog/post/atomic-web-design/)
 - [How to center things with style in css](https://www.freecodecamp.org/news/how-to-center-things-with-style-in-css-dc87b7542689/)
 - [Using custom react hooks with forms](https://upmostly.com/tutorials/using-custom-react-hooks-simplify-forms)

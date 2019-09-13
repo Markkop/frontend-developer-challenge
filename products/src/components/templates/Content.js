@@ -1,6 +1,6 @@
 import React from "react";
-import Products from "./Products";
-import Newsletter from "./Newsletter";
+import Products from "../organisms/Products";
+import Newsletter from "../organisms/Newsletter";
 
 const Content = () => {
   return (
