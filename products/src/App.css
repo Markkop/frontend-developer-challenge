@@ -75,9 +75,8 @@ nav {
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
-  margin: 50px 0;
-
-  padding: 0 10px;
+  margin: 50px auto;
+  max-width: 800px;
 }
 
 /* Input: */
