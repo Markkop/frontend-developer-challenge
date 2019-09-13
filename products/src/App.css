@@ -108,13 +108,6 @@ h3 {
   font: Bold 16px/16px "Helvetica Neue";
 }
 
-@media screen and (max-width: 480px) {
-  nav {
-    width: auto;
-    flex-flow: row wrap;
-  }
-}
-
 .buyButton {
   width: 100%;
 }
@@ -141,11 +134,19 @@ form > * {
   justify-content: center;
 }
 
+@media screen and (max-width: 480px) {
+  nav {
+    width: auto;
+    flex-flow: row wrap;
+  }
+}
+
 .inputField {
   margin: 0 20px;
   display: flex;
   flex-flow: column wrap;
-  width: 350px;
+  width: 70%;
+  max-width: 350px;
 }
 
 label {
