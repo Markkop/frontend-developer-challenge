@@ -12,7 +12,14 @@ const Header = () => {
         </p>
       </div>
       <nav>
-        <input type="button" value="Conheça a Linx" />
+        <a href="google.com" class="button">
+          <button>Google</button>
+        </a>
+        <input
+          type="button"
+          value="Conheça a Linx"
+          onclick='location.href = "http://google.com"'
+        />
         <input type="button" value="Ajude o algorítimo" />
         <input type="button" value="Seus produtos" />
         <input type="button" value="Compartilhe" />

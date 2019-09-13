@@ -6,7 +6,8 @@ body {
 }
 
 p,
-label {
+label,
+a {
   font: normal 12px/16px "Helvetica Neue";
   letter-spacing: 0;
   opacity: 1;
@@ -55,7 +56,8 @@ nav {
 }
 
 input[type="submit"],
-input[type="button"] {
+input[type="button"],
+a > button {
   font-size: 16px;
   padding: 1vh;
   height: 40px;
@@ -68,12 +70,6 @@ input[type="button"] {
 
 input[type="submit"] {
   width: 260px;
-}
-
-header input[type="button"] {
-  box-shadow: 0px 1px 6px #00000029;
-  font-size: 14px;
-  width: 160px;
 }
 
 h2 {
