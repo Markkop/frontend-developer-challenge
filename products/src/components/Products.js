@@ -35,7 +35,7 @@ const Products = () => {
         ))}
       </div>
       <input
-        className="moreProductsButton"
+        className="moreButton"
         type="button"
         value={
           isLoading ? "Carregando produtos..." : "Ainda mais produtos aqui"

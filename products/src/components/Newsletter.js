@@ -19,16 +19,28 @@ const Newsletter = () => {
       <form onSubmit={handleSubmit}>
         {/* Convert this input to component */}
         <div className="inputContainer">
-          <div className="inputField">
+          <div className="inputBox">
             <label htmlFor="name">Nome do amigo:</label>
-            <input type="text" id="name" onChange={handleChange} required />
+            <input
+              className="button inputField"
+              type="text"
+              id="name"
+              onChange={handleChange}
+              required
+            />
           </div>
-          <div className="inputField">
+          <div className="inputBox">
             <label htmlFor="email">Email do amigo:</label>
-            <input type="email" id="email" onChange={handleChange} required />
+            <input
+              className="button inputField"
+              type="email"
+              id="email"
+              onChange={handleChange}
+              required
+            />
           </div>
         </div>
-        <input className="button" type="submit" value="Enviar agora" />
+        <input type="submit" value="Enviar agora" />
       </form>
     </section>
   );

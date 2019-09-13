@@ -6,23 +6,24 @@ const Header = () => {
       <div>
         <p>uma seleção de produtos</p>
         <p>especial para você</p>
-        <p>
+        <h3>
           Todos os produtos desta lista foram selecionados a partir da sua
           navegação. Aproveite!
-        </p>
+        </h3>
       </div>
       <nav>
-        <a href="google.com" class="button">
-          <button>Google</button>
+        <a href="http://a.a">
+          <button className="navButton">Conheça a Linx</button>
         </a>
-        <input
-          type="button"
-          value="Conheça a Linx"
-          onclick='location.href = "http://google.com"'
-        />
-        <input type="button" value="Ajude o algorítimo" />
-        <input type="button" value="Seus produtos" />
-        <input type="button" value="Compartilhe" />
+        <a href="http://a.a">
+          <button className="navButton">Ajude o algorítimo</button>
+        </a>
+        <a href="http://a.a">
+          <button className="navButton">Seus produtos</button>
+        </a>
+        <a href="http://a.a">
+          <button className="navButton">Compartilhe</button>
+        </a>
       </nav>
     </header>
   );

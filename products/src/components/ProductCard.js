@@ -16,12 +16,12 @@ const ProductCard = ({ product }) => {
         <p>{product.description}</p>
       </div>
       <div className="pricesDiv">
-        <p>De: {formatPrice(product.oldPrice)}</p>
+        <h3>De: {formatPrice(product.oldPrice)}</h3>
         <p className="priceAfter">Por: {formatPrice(product.price)}</p>
-        <p>
+        <h3>
           ou {product.installments.count}x de{" "}
           {formatPrice(product.installments.value)}
-        </p>
+        </h3>
       </div>
       <input className="buyButton" type="button" value="Comprar" />
     </div>
