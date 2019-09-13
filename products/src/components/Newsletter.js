@@ -1,5 +1,6 @@
 import React from "react";
 import useForm from "../Hooks/useForm";
+import FormInput from "./FormInput";
 
 const Newsletter = () => {
   const registerNewsletter = () => {
@@ -10,35 +11,31 @@ const Newsletter = () => {
   const { values, handleChange, handleSubmit } = useForm(registerNewsletter);
 
   return (
-    <section>
+    <section id="newsletter">
       <h2>Compartilhe a novidade</h2>
       <p>
         Quer que seus amigos também ganhem a lista personalizada deles? Preencha
         agora!
       </p>
       <form onSubmit={handleSubmit}>
-        {/* Convert this input to component */}
         <div className="inputContainer">
-          <div className="inputBox">
-            <label htmlFor="name">Nome do amigo:</label>
-            <input
-              className="button inputField"
-              type="text"
-              id="name"
-              onChange={handleChange}
-              required
+          {[
+            {
+              type: "text",
+              id: "name"
+            },
+            {
+              type: "email",
+              id: "email"
+            }
+          ].map(({ type, id }) => (
+            <FormInput
+              key={id}
+              type={type}
+              id={id}
+              handleChange={handleChange}
             />
-          </div>
-          <div className="inputBox">
-            <label htmlFor="email">Email do amigo:</label>
-            <input
-              className="button inputField"
-              type="email"
-              id="email"
-              onChange={handleChange}
-              required
-            />
-          </div>
+          ))}
         </div>
         <input type="submit" value="Enviar agora" />
       </form>
