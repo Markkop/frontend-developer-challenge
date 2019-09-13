@@ -8,19 +8,19 @@ const formatPrice = (price = 0) => {
 };
 
 const ProductCard = ({ product }) => {
+  const { name, image, description, oldPrice, price, installments } = product;
   return (
     <div className="productCard">
-      <img alt={product.name} src={product.image} />
+      <img alt={name} src={image} />
       <div>
-        <h3 className="productTitle">{product.name}</h3>
-        <p>{product.description}</p>
+        <h3>{name}</h3>
+        <p>{description}</p>
       </div>
       <div className="pricesDiv">
-        <h3>De: {formatPrice(product.oldPrice)}</h3>
-        <p className="priceAfter">Por: {formatPrice(product.price)}</p>
+        <h3>De: {formatPrice(oldPrice)}</h3>
+        <p className="priceAfter">Por: {formatPrice(price)}</p>
         <h3>
-          ou {product.installments.count}x de{" "}
-          {formatPrice(product.installments.value)}
+          ou {installments.count}x de {formatPrice(installments.value)}
         </h3>
       </div>
       <input className="buyButton" type="button" value="Comprar" />
@@ -31,6 +31,7 @@ const ProductCard = ({ product }) => {
 ProductCard.defaultProps = {
   product: {
     name: "Name",
+    image: "#",
     description: "Description",
     oldPrice: "10",
     price: "5",
