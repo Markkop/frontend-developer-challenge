@@ -19,15 +19,13 @@ const Products = () => {
     fetchData();
   }, [page]);
 
-  console.log(products);
-
   const loadMoreProducts = (pagesForward = 1) => {
     const nextPage = page + pagesForward;
     setPage(nextPage);
   };
 
   return (
-    <section>
+    <section id="products">
       <h2>Sua seleção especial</h2>
       <div className="productList">
         {products.map(product => (
