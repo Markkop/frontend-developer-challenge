@@ -150,6 +150,20 @@ form > * {
   max-width: 350px;
 }
 
+/* Size Tool */
+.sizeToolContainer {
+  width: 120px;
+  height: 60px;
+  position: fixed;
+  top: 40px;
+  left: 40px;
+  background-color: #0c9;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  box-shadow: 2px 2px 3px #999;
+}
+
 /* Responsive */
 @media screen and (max-width: 800px) {
   nav {
