@@ -21,8 +21,8 @@ const Products = () => {
 
   console.log(products);
 
-  const loadMoreProducts = () => {
-    const nextPage = page + 1;
+  const loadMoreProducts = (pagesForward = 1) => {
+    const nextPage = page + pagesForward;
     setPage(nextPage);
   };
 
@@ -30,10 +30,9 @@ const Products = () => {
     <section>
       <h2>Sua seleção especial</h2>
       <div className="productList">
-        {products.map(product => {
-          console.log(product);
-          return <ProductCard key={product.id} product={product} />;
-        })}
+        {products.map(product => (
+          <ProductCard key={product.id} product={product} />
+        ))}
       </div>
       <input
         className="moreProductsButton"
@@ -41,7 +40,7 @@ const Products = () => {
         value={
           isLoading ? "Carregando produtos..." : "Ainda mais produtos aqui"
         }
-        onClick={() => loadMoreProducts()}
+        onClick={() => loadMoreProducts(1)}
       />
     </section>
   );

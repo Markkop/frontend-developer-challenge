@@ -8,8 +8,6 @@ const formatPrice = (price = 0) => {
 };
 
 const ProductCard = ({ product }) => {
-  formatPrice();
-  console.log(product);
   return (
     <div className="productCard">
       <img alt={product.name} src={product.image} />
@@ -32,9 +30,13 @@ const ProductCard = ({ product }) => {
 
 ProductCard.defaultProps = {
   product: {
+    name: "Name",
+    description: "Description",
+    oldPrice: "10",
+    price: "5",
     installments: {
       count: 1,
-      value: 0
+      value: 5
     }
   }
 };
