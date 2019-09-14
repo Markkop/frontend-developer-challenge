@@ -18,11 +18,12 @@ Check it out at: https://products.markkop.now.sh/
 
 ## Commands
 
-`git clone <this repository's link>`\
-`cd products`\
+`git clone https://github.com/Markkop/frontend-developer-challenge.git`\
+`cd frontend-developer-challenge`\
+`git checkout marcelo-kopmann`\
 `yarn` or `npm install` to install dependencies\
 `yarn star` or `npm start` to run it at `localhost:3000`\
-`now` with Now installed in your system to deploy (need to `now login` first)
+`now` with [Now](https://zeit.co/docs) installed in your system to deploy (need to `now login` first)
 
 ## Useful References
 
