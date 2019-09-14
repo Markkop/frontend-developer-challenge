@@ -1,9 +1,9 @@
 import React from "react";
 
-const FormInput = ({ type = "", id = "", handleChange }) => {
+const FormInput = ({ type = "", id = "", label = "", handleChange }) => {
   return (
     <div className="inputBox">
-      <label htmlFor={id}>Nome do amigo:</label>
+      <label htmlFor={id}>{label}</label>
       <input
         className="inputField"
         type={type}

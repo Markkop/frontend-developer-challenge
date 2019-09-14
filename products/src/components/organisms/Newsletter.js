@@ -22,17 +22,20 @@ const Newsletter = () => {
           {[
             {
               type: "text",
-              id: "name"
+              id: "name",
+              label: "Nome do amigo"
             },
             {
               type: "email",
-              id: "email"
+              id: "email",
+              label: "Email do amigo"
             }
-          ].map(({ type, id }) => (
+          ].map(({ type, id, label }) => (
             <FormInput
               key={id}
               type={type}
               id={id}
+              label={label}
               handleChange={handleChange}
             />
           ))}
