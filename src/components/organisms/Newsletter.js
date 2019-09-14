@@ -1,5 +1,5 @@
 import React from "react";
-import useForm from "../../Hooks/useForm";
+import useForm from "../../hooks/useForm";
 import FormInput from "../atom/FormInput";
 
 const Newsletter = () => {
