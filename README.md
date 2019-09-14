@@ -2,7 +2,7 @@
 
 This project is my first Landing Page ever and part of a job vacancy challenge.\
 While doing it, I was able to learn and practice **Javascript**, **Semantic HTML**, **CSS**, **Responsive CSS**, **Git**, **Now** (to deploy), **React**, **React Hooks** and **HTML Requests**\
-Check it out at: https://products.markkop.now.sh/
+Check it out at: https://frontend-developer-challenge.markkop.now.sh/ *(try on mobile too!)*
 
 ## Main Difficulties
 
@@ -12,7 +12,7 @@ Check it out at: https://products.markkop.now.sh/
 
 ## Wishlist
 
-- Testing - while I like to create test, I'm still having trouble to know how to properly test the frontend layer
+- Testing - while I like to create tests, I'm still having trouble to know how to properly test the frontend layer
 - Font Size Adjusting Widget - to be able to change the page's font size as I thought the default one kinda small
 - Animations - "Soon..." text could appear and disappear smoothly, as well as page's sections
 
@@ -22,7 +22,7 @@ Check it out at: https://products.markkop.now.sh/
 `cd frontend-developer-challenge`\
 `git checkout marcelo-kopmann`\
 `yarn` or `npm install` to install dependencies\
-`yarn star` or `npm start` to run it at `localhost:3000`\
+`yarn start` or `npm start` to run it at `localhost:3000`\
 `now` with [Now](https://zeit.co/docs) installed in your system to deploy (need to `now login` first)
 
 ## Useful References
