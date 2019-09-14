@@ -1,14 +1,14 @@
 ## Products Landing Page
 
-This project is my first Landing Page ever and part of a job vancacy challenge.\
+This project is my first Landing Page ever and part of a job vacancy challenge.\
 While doing it, I was able to learn and practice **Javascript**, **Semantic HTML**, **CSS**, **Responsive CSS**, **Git**, **Now** (to deploy), **React**, **React Hooks** and **HTML Requests**\
 Check it out at: https://products.markkop.now.sh/
 
 ## Main Difficulties
 
-- Tried to added a Font Size Adjusting Widget, but it didn't look easy enough as I thought
+- Tried to add a Font Size Adjusting Widget, but it didn't look easy enough as I thought
 - Learning and applying React Hooks for state management (it was pretty cool!)
-- CSS as a whole as I had never such great opportunitty to practice
+- CSS as a whole as I had never such great opportunity to practice
 
 ## Wishlist
 
@@ -21,7 +21,7 @@ Check it out at: https://products.markkop.now.sh/
 `git clone <this repository's link>`\
 `cd products`\
 `yarn` or `npm install` to install dependencies\
-`yarn star` or `npm start` to run it at `locahost:3000`\
+`yarn star` or `npm start` to run it at `localhost:3000`\
 `now` with Now installed in your system to deploy (need to `now login` first)
 
 ## Useful References
