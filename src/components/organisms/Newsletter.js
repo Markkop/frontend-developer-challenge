@@ -23,12 +23,12 @@ const Newsletter = () => {
             {
               type: "text",
               id: "name",
-              label: "Nome do amigo"
+              label: "Nome do seu amigo:"
             },
             {
               type: "email",
               id: "email",
-              label: "Email do amigo"
+              label: "E-mail:"
             }
           ].map(({ type, id, label }) => (
             <FormInput
