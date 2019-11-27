@@ -1,7 +1,7 @@
 ## Products Landing Page
 
 This project is my first Landing Page ever and part of a job vacancy challenge.\
-While doing it, I was able to learn and practice **Javascript**, **Semantic HTML**, **CSS**, **Responsive CSS**, **Git**, **Now** (to deploy), **React**, **React Hooks** and **HTML Requests**\
+While doing it, I was able to learn and practice **Javascript**, **Semantic HTML**, **CSS**, **Responsive CSS**, **Git**, **Now** (to deploy), **React**, **React Hooks** and **HTTP Requests**\
 Check it out at: https://frontend-developer-challenge.markkop.now.sh/ *(try on mobile too!)*
 
 ## Main Difficulties
