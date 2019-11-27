@@ -1,0 +1,186 @@
+/* Default */
+body {
+  --default-font-size: 12px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #888888;
+  letter-spacing: 0;
+  opacity: 1;
+  font-size: var(--default-font-size);
+  line-height: calc(var(--default-font-size) + 4px);
+  font-family: "Helvetica Neue", Helvetica;
+}
+
+/* Texts */
+label {
+  text-align: left;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: calc(var(--default-font-size) + 6px);
+}
+
+h3 {
+  font-weight: normal;
+  font-size: calc(var(--default-font-size) + 2px);
+}
+
+/* Image */
+img {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #707070;
+  width: 200px;
+  height: 150px;
+}
+
+/* Sections */
+header,
+footer {
+  background: #707070 0% 0% no-repeat padding-box;
+  border: 1px solid #707070;
+  align-items: center;
+  padding: 25px 0;
+  color: #ffffff;
+}
+
+header {
+  padding-top: 69px;
+}
+
+section > * {
+  margin: 50px 0;
+}
+
+footer {
+  padding: 70px 0;
+}
+
+/* Header */
+header p:first-child {
+  font-size: calc(var(--default-font-size) + 8px);
+  line-height: 24px;
+  margin-bottom: 0px;
+}
+
+header p:nth-child(2) {
+  font-weight: bold;
+  font-size: calc(var(--default-font-size) + 28px);
+  line-height: 49px;
+  margin-top: 0;
+}
+
+nav {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  margin: 50px auto;
+  max-width: 800px;
+}
+
+/* Input: */
+input,
+button {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  font-size: calc(var(--default-font-size) + 4px);
+  color: #888888;
+  border: 1px solid #707070;
+  border-radius: 4px;
+  min-height: 40px;
+  width: 260px;
+}
+
+.navButton,
+nav > a {
+  font-size: calc(var(--default-font-size) + 2px);
+  margin: 0 20px;
+  width: 160px;
+  margin: auto;
+}
+
+.buyButton {
+  width: 100%;
+}
+
+.inputField {
+  width: 340px;
+  height: 30px;
+}
+
+/* Content */
+.productList {
+  max-width: 1040px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.productCard {
+  display: flex;
+  flex-flow: row wrap;
+  text-align: left;
+  width: 201px;
+  padding: 20px;
+}
+
+.pricesDiv .priceAfter {
+  font-weight: bold;
+  font-size: calc(var(--default-font-size) + 4px);
+  line-height: 16px;
+}
+
+/* Form */
+form > * {
+  margin: 25px 20px;
+}
+
+.inputContainer {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+.inputBox {
+  margin: 0 20px;
+  display: flex;
+  flex-flow: column wrap;
+  width: 70%;
+  max-width: 350px;
+}
+
+/* Size Tool */
+.sizeToolContainer {
+  width: 120px;
+  height: 60px;
+  position: fixed;
+  top: 40px;
+  left: 40px;
+  background-color: #0c9;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  box-shadow: 2px 2px 3px #999;
+}
+
+/* Responsive */
+@media screen and (max-width: 800px) {
+  nav {
+    width: auto;
+    flex-flow: column wrap;
+  }
+
+  .inputContainer {
+    flex-flow: row wrap;
+  }
+
+  .productList {
+    margin: 0 0;
+  }
+
+  .inputField {
+    width: 100%;
+  }
+}
